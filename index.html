@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form class="form" id="form" name="form1" action="#">
+        <div class="form_info">
+            <div class="username">
+                <img src="user.png">
+                <input type="text" placeholder="Enter Your Username" id="username" class="input">
+                <span class="Emailmessage"></span>
+            </div>
+            <div class="email">
+                <img src="user.png">
+                <input type="text" name="text1" placeholder="Enter Your email address" id="email">
+            </div>
+            <div class="password">
+                <img src="padlock.png">
+                <img src="hide.png" class="psw" onclick="myFunc()">
+                <input type="password" placeholder="Enter Your password" id="password">
+            </div>
+            <div class="password2" onclick="verifyPassword()">
+                <img src="padlock.png">
+                <img src="hide.png" class="psw2" onclick="myVerify()">
+                <input type="password" placeholder="Confirm your password" id="password2">
+                <span id="message"></span>
+                <keygen>
+            </div>
+        </div>
+        <button type="submit">Login</button>
+    </form>
+    <script type="text/javascript" src="main.js"></script>
+</body>
+</html>
